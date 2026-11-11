@@ -1,0 +1,108 @@
+body.toplevel_page_nuts-cms #wpcontent{padding-left:0}body.toplevel_page_nuts-cms #wpbody-content{padding-bottom:0}body.toplevel_page_nuts-cms #wpfooter{display:none}
+#nuts-cms-root{--ink:#222222;--muted:#737373;--line:#e2e2e2;--green:#096fd2;color:var(--ink);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}#nuts-cms-root *{box-sizing:border-box}.nuts-shell{display:grid;grid-template-columns:220px minmax(0,1fr);min-height:calc(100vh - 32px);background:#f6f6f6}.nuts-sidebar{display:flex;flex-direction:column;background:#333333;color:#ededed;padding:32px 22px}.nuts-logo{font-size:39px;font-weight:900;letter-spacing:-3px;line-height:1}.nuts-logo span{display:block;font-size:9px;letter-spacing:2px;margin-top:12px;font-weight:500;color:#096fd2}.nuts-nav-label{margin:55px 0 15px;font-size:9px;letter-spacing:1.1px;color:#9d9d9d}.nuts-sidebar a{display:block;padding:12px 15px;color:#d9d9d9;text-decoration:none;border-radius:7px;margin-bottom:5px}.nuts-sidebar a.active{background:var(--green);color:#272727;font-weight:700}.nuts-sidebar-bottom{margin-top:auto;padding-top:60px;font-size:10px;color:#b0b0b0;letter-spacing:1px}.nuts-sidebar-bottom p{letter-spacing:0;max-width:150px}.nuts-shell main{padding:0 40px 30px;min-width:0}.nuts-shell header{display:flex;justify-content:space-between;gap:15px;padding:22px 0;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}.nuts-shell main a{color:#363636;text-decoration:none}.nuts-heading{display:flex;justify-content:space-between;align-items:center;padding:40px 0 20px}.nuts-eyebrow{font-size:10px;letter-spacing:2px;color:var(--muted)}.nuts-heading h1{font-size:40px;font-weight:650;letter-spacing:-1.7px;line-height:1.2;margin:8px 0}.nuts-heading p{color:var(--muted)}.nuts-badge{font-size:11px;border:1px solid #d4d4d4;border-radius:25px;padding:7px 13px;white-space:nowrap}.nuts-create,.nuts-card{background:white;border:1px solid var(--line);border-radius:12px;margin-bottom:24px}.nuts-create{padding:20px}.nuts-create label{font-weight:600;display:block;margin-bottom:10px}.nuts-create>div{display:flex;gap:10px}.nuts-shell input{border:1px solid #d8d8d8;border-radius:6px;padding:9px 12px;font:inherit;min-width:0}.nuts-create input{flex:1}.nuts-shell button{font:inherit;border:1px solid #cbcbcb;background:var(--green);color:#272727;padding:9px 15px;border-radius:6px;cursor:pointer}.nuts-shell button:disabled{opacity:.5;cursor:default}.nuts-shell :is(a,button,input):focus-visible{outline:3px solid #646464;outline-offset:3px}.nuts-toolbar{padding:20px;display:flex;align-items:center;justify-content:space-between;gap:12px}.nuts-toolbar h2{font-size:16px;margin:0}.nuts-toolbar input{width:240px;font-size:12px}.nuts-table-wrap{overflow-x:auto}.nuts-card table{border-collapse:collapse;width:100%;text-align:left;white-space:nowrap}.nuts-card th{font-size:10px;color:var(--muted);font-weight:500;text-transform:uppercase;letter-spacing:1px;background:#f9f9f9}.nuts-card td,.nuts-card th{padding:16px 20px;border-top:1px solid var(--line)}.nuts-card strong{font-size:13px}.nuts-card small{display:block;color:var(--muted);font-size:11px}.nuts-status{font-size:11px;padding:5px 9px;border-radius:4px;background:#f0f0f0;color:#676767}.nuts-status.publish{background:#e9e9e9;color:#494949}.nuts-actions{display:flex;gap:12px;align-items:center}.nuts-actions button{background:transparent;font-size:11px;padding:4px 8px}.nuts-actions a{font-size:11px}.nuts-empty{padding:30px;color:var(--muted)}.nuts-pagination{display:flex;align-items:center;justify-content:flex-end;gap:15px;padding:15px}.nuts-pagination button{background:#f5f5f5;font-size:11px}.nuts-shell footer{font-size:11px;color:var(--muted)}.nuts-error,.nuts-notice{padding:15px;border-radius:6px;background:#fcebe7;color:#8b3027}.nuts-notice{background:#e9e9e9;color:#3c3c3c}.nuts-error button{margin-left:12px}@media(max-width:1100px){.nuts-shell{grid-template-columns:170px minmax(0,1fr)}.nuts-shell main{padding:0 20px 25px}.nuts-sidebar{padding:25px 14px}}@media(max-width:700px){.nuts-shell{display:block}.nuts-sidebar{display:none}.nuts-heading{padding-top:25px}.nuts-heading h1{font-size:30px}.nuts-badge{display:none}.nuts-create>div,.nuts-toolbar{flex-wrap:wrap}.nuts-toolbar input{width:100%}.nuts-shell main{padding:0 15px 25px}.nuts-create input{flex-basis:100%}}
+body.toplevel_page_nuts-cms #adminmenumain{display:none}body.toplevel_page_nuts-cms #wpcontent,body.toplevel_page_nuts-cms #wpfooter{margin-left:0}body.toplevel_page_nuts-cms #wpbody>.notice,body.toplevel_page_nuts-cms #wpbody-content>.notice{margin:15px 20px}
+.nuts-wp-menu{margin-top:28px;border-top:1px solid #444444;padding-top:18px}.nuts-wp-menu>summary{cursor:pointer;font-size:13px;font-weight:600;padding:10px 5px;list-style:revert}.nuts-wp-menu>summary small{display:block;font-size:10px;color:#a8a8a8;font-weight:400;margin:5px 0 0 13px}.nuts-wp-menu input{width:100%;margin:10px 0 14px;background:#313131;color:#efefef;border-color:#565656!important;font-size:11px!important}.nuts-wp-menu input::placeholder{color:#aeaeae}.nuts-wp-group{margin-bottom:5px}.nuts-wp-group summary{cursor:pointer;font-size:12px;padding:9px 5px;color:#d9d9d9}.nuts-sidebar .nuts-wp-group a{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11px;padding:8px 10px 8px 17px;margin:2px 0;color:#b9b9b9;border-radius:5px}.nuts-sidebar .nuts-wp-group a:hover,.nuts-sidebar .nuts-wp-group a.selected{background:#3a3a3a;color:#d8d8d8}.nuts-menu-count{font-size:9px;min-width:16px;padding:1px 5px;background:#4e4e4e;border-radius:10px;color:#e8e8e8;margin-left:6px}.nuts-menu-empty{font-size:11px;color:#b7b7b7}.nuts-workspace-bar{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:20px 0 15px}.nuts-workspace-bar h1{font-size:25px;line-height:1.25;margin:0;letter-spacing:-.7px}.nuts-workspace-bar a{font-size:11px;white-space:nowrap}.nuts-workspace-bar .nuts-eyebrow{margin:0 0 6px}.nuts-workspace iframe{display:block;width:100%;height:calc(100vh - 220px);min-height:560px;border:1px solid var(--line);border-radius:10px;background:#f6f6f6}.nuts-workspace{margin-bottom:22px}.nuts-frame-loading{font-size:12px;color:var(--muted);margin:0 0 10px}.nuts-sidebar{min-width:0}.nuts-sidebar a:hover{background:#343434}.nuts-sidebar a.active:hover{background:var(--green)}
+@media(max-width:700px){.nuts-sidebar{display:flex;padding:17px}.nuts-logo{font-size:25px}.nuts-logo span,.nuts-nav-label,.nuts-sidebar-bottom{display:none}.nuts-sidebar>a{padding:9px 12px;margin-top:8px}.nuts-wp-menu{margin-top:10px;padding-top:6px}.nuts-wp-menu nav{max-height:45vh;overflow:auto}.nuts-workspace iframe{min-height:540px;height:75vh}.nuts-workspace-bar{align-items:flex-start}.nuts-shell main header{flex-wrap:wrap}}
+.nuts-primary-nav .nuts-nav-label{margin:24px 0 8px;font-size:9px;letter-spacing:1.8px}.nuts-primary-nav>div:first-child .nuts-nav-label{margin-top:35px}.nuts-primary-nav a{display:flex;align-items:center;gap:10px;padding:9px 11px;font-size:12px;margin-bottom:3px}.nuts-primary-nav .dashicons{font-size:17px;width:17px;height:17px;opacity:.75}.nuts-section-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-bottom:24px}.nuts-section-tile{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:20px}.nuts-section-grid .nuts-section-tile{margin:0;display:flex;flex-direction:column;align-items:flex-start}.nuts-section-tile h2{font-size:17px;margin:0 0 12px}.nuts-section-tile p{color:var(--muted);max-width:740px}.nuts-section-action{display:inline-block;background:#ededed;padding:9px 13px;border:1px solid #d3d3d3;border-radius:6px;font-size:12px;margin-top:auto}.nuts-section-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.nuts-section-note{font-size:12px}.nuts-feature-status{display:inline-block;font-size:11px;color:#636363;background:#f0f0f0;border-radius:5px;padding:5px 9px;margin-bottom:15px}.nuts-palette{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:18px;margin-top:20px}.nuts-color-sample{display:block;height:65px;border-radius:7px;border:1px solid #dcdcdc;margin-bottom:8px}.nuts-color strong,.nuts-color small{display:block;font-size:11px}.nuts-color small{color:var(--muted)}.nuts-fonts>div{padding:15px 0;border-bottom:1px solid var(--line)}.nuts-fonts p{font-size:12px;margin-bottom:0}.nuts-section-hub{margin-bottom:25px}@media(max-width:700px){.nuts-primary-nav{max-height:35vh;overflow:auto}.nuts-primary-nav .nuts-nav-label{display:block;margin:15px 0 5px}.nuts-primary-nav>div:first-child .nuts-nav-label{margin-top:15px}.nuts-primary-nav a{margin-top:0}.nuts-section-grid{grid-template-columns:minmax(0,1fr)}}
+.nuts-logo{font-size:31px;letter-spacing:-1.8px}.nuts-logo span{font-size:9px;letter-spacing:.7px;line-height:1.5;max-width:180px}.nuts-sidebar-bottom{letter-spacing:.3px}
+/* The host admin may center flex children taller than its viewport. Own the shell layout. */
+body.toplevel_page_nuts-cms{display:block!important;padding:0!important;height:auto!important;min-height:calc(100vh - 54px);align-items:normal!important;justify-content:normal!important;overflow:visible!important}
+body.toplevel_page_nuts-cms #wpwrap{width:100%;height:auto;min-height:calc(100vh - 54px);top:0;margin:0}
+body.toplevel_page_nuts-cms #wpbody-content{float:none}
+#nuts-cms-root .nuts-shell{--line:#dedede;--muted:#707070;--ink:#252525}
+#nuts-cms-root .nuts-wp-menu,#nuts-cms-root .nuts-design-menu{border-top-color:#555}
+#nuts-cms-root .nuts-shell :focus-visible{outline-color:var(--nuts-accent,#096fd2)}
+#nuts-cms-root .nuts-menu-count{background:#555;color:#fff}
+#nuts-cms-root .nuts-feature-status,#nuts-cms-root .nuts-status,#nuts-cms-root .nuts-health-badge{background:#f0f0f0;color:#444}
+#nuts-cms-root .nuts-health-badge.critical{background:var(--nuts-accent,#096fd2);color:#fff}
+#nuts-cms-root .nuts-notice,#nuts-cms-root .nuts-error{background:#f1f4f8;color:#333;border-left:3px solid var(--nuts-accent,#096fd2)}
+#nuts-cms-root .nuts-event-list .critical{border-left-color:var(--nuts-accent,#096fd2)}
+.nuts-site-card{background:rgba(255,255,255,.07);border-radius:6px;padding:10px 13px;margin-top:18px;min-height:59px;color:#fff;overflow-wrap:anywhere}
+.nuts-site-card strong{display:block;font-size:11.8px;font-weight:400;line-height:18px;text-transform:uppercase}
+.nuts-site-card span{display:block;font-size:9px;font-weight:400;line-height:18px;color:rgba(255,255,255,.7)}
+.nuts-favicon-preview{display:flex;align-items:center;gap:24px;padding:24px;border:1px solid #dedede;border-radius:10px;margin:24px 0;background:#f5f5f5}
+.nuts-favicon-preview>img{display:block;width:96px;height:96px;object-fit:contain;border-radius:8px;flex-shrink:0;background:#fff}
+.nuts-favicon-preview>span{font-size:12px;border:1px dashed #aaa;padding:20px;width:120px;color:#707070}
+@media(max-width:700px){.nuts-site-card{margin-top:15px}.nuts-favicon-preview{padding:15px;gap:15px;flex-wrap:wrap}}
+#nuts-cms-root .nuts-sidebar .nuts-collapsible>summary{list-style:none;position:relative;cursor:pointer;padding-right:22px;user-select:none}
+#nuts-cms-root .nuts-sidebar .nuts-collapsible>summary::-webkit-details-marker{display:none}
+#nuts-cms-root .nuts-sidebar .nuts-collapsible>summary::marker{content:''}
+#nuts-cms-root .nuts-sidebar .nuts-collapsible>summary:after{content:'';position:absolute;right:5px;top:50%;width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-50%) rotate(-45deg);opacity:.65;transition:transform .15s,opacity .15s}
+#nuts-cms-root .nuts-sidebar .nuts-collapsible[open]>summary:after{transform:translateY(-70%) rotate(45deg)}
+#nuts-cms-root .nuts-sidebar .nuts-collapsible>summary:hover:after{opacity:1}
+#nuts-cms-root .nuts-primary-group{margin-top:24px}
+#nuts-cms-root .nuts-primary-group:first-child{margin-top:35px}
+#nuts-cms-root .nuts-primary-group>.nuts-nav-label{display:block;margin:0 0 8px;padding-top:3px;padding-bottom:3px;font-size:9px;letter-spacing:1.8px}
+#nuts-cms-root .nuts-primary-group:not([open])>.nuts-nav-label{margin-bottom:0}
+#nuts-cms-root .nuts-wp-group .nuts-collapsible>summary{padding-right:25px}
+@media(prefers-reduced-motion:reduce){#nuts-cms-root .nuts-collapsible>summary:after{transition:none}}
+@media(max-width:700px){#nuts-cms-root .nuts-primary-group{margin-top:15px}#nuts-cms-root .nuts-primary-group:first-child{margin-top:15px}}
+#nuts-cms-root .nuts-sidebar>.nuts-design-menu,#nuts-cms-root .nuts-sidebar>.nuts-wp-menu{border:0;padding:0;margin-top:24px}
+#nuts-cms-root .nuts-sidebar .nuts-collapsible>.nuts-group-heading{display:block;margin:0 0 8px;padding:3px 22px 3px 0;font-size:9px;font-weight:400;line-height:13.5px;letter-spacing:1.8px;text-transform:uppercase}
+#nuts-cms-root .nuts-sidebar .nuts-collapsible:not([open])>.nuts-group-heading{margin-bottom:0}
+@media(max-width:700px){#nuts-cms-root .nuts-sidebar>.nuts-design-menu,#nuts-cms-root .nuts-sidebar>.nuts-wp-menu{margin-top:15px}}
+
+/* 1.3.0: settings forms, dashboard, service tools */
+#nuts-cms-root .nuts-form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px 18px;margin:16px 0}
+#nuts-cms-root .nuts-field{display:flex;flex-direction:column;gap:6px;font-size:12px}
+#nuts-cms-root .nuts-field>span{font-weight:600;color:#333}
+#nuts-cms-root .nuts-field small{color:var(--muted);font-size:11px}
+#nuts-cms-root .nuts-field input,#nuts-cms-root .nuts-field select,#nuts-cms-root .nuts-field textarea{width:100%;font:inherit;padding:9px 12px;border:1px solid #d8d8d8;border-radius:6px;background:#fff}
+#nuts-cms-root .nuts-toggle{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid #efefef;cursor:pointer;font-size:13px}
+#nuts-cms-root .nuts-toggle:last-of-type{border-bottom:0}
+#nuts-cms-root .nuts-toggle input{position:absolute;opacity:0;pointer-events:none}
+#nuts-cms-root .nuts-toggle strong{display:block}
+#nuts-cms-root .nuts-toggle small{color:var(--muted);font-size:11px}
+#nuts-cms-root .nuts-toggle-switch{flex-shrink:0;width:36px;height:20px;border-radius:20px;background:#cfcfcf;position:relative;margin-top:1px;transition:background .15s}
+#nuts-cms-root .nuts-toggle-switch:after{content:'';position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff;transition:left .15s}
+#nuts-cms-root .nuts-toggle input:checked+.nuts-toggle-switch{background:var(--nuts-accent,#096fd2)}
+#nuts-cms-root .nuts-toggle input:checked+.nuts-toggle-switch:after{left:18px}
+#nuts-cms-root .nuts-toggle input:focus-visible+.nuts-toggle-switch{outline:3px solid var(--nuts-accent,#096fd2);outline-offset:2px}
+#nuts-cms-root .nuts-choice{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
+#nuts-cms-root .nuts-choice label{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:8px;padding:13px;cursor:pointer;font-size:13px}
+#nuts-cms-root .nuts-choice label:has(input:checked){border-color:var(--nuts-accent,#096fd2);box-shadow:0 0 0 1px var(--nuts-accent,#096fd2)}
+#nuts-cms-root .nuts-choice strong{display:block}
+#nuts-cms-root .nuts-choice small{color:var(--muted);font-size:11px}
+#nuts-cms-root .nuts-maintenance-on{border-left:4px solid #dc3545}
+#nuts-cms-root .nuts-mini-table{width:100%;border-collapse:collapse;margin:14px 0}
+#nuts-cms-root .nuts-mini-table th{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);text-align:left;padding:6px 8px}
+#nuts-cms-root .nuts-mini-table td{padding:4px 6px;border-top:1px solid #efefef}
+#nuts-cms-root .nuts-mini-table input,#nuts-cms-root .nuts-mini-table select{width:100%;font:inherit;padding:7px 9px;border:1px solid #d8d8d8;border-radius:6px}
+#nuts-cms-root .nuts-shell .nuts-mini-table button{background:transparent;border:0;font-size:14px;padding:4px 8px;color:#555}
+#nuts-cms-root .nuts-dash-counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-top:16px}
+#nuts-cms-root .nuts-shell .nuts-dash-count{background:#f2f3f5;border:1px solid #e2e4e8;border-radius:10px;padding:16px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:4px;color:#2b2f36}
+#nuts-cms-root .nuts-shell .nuts-dash-count:hover{border-color:var(--nuts-accent,#096fd2);background:#eceff3}
+#nuts-cms-root .nuts-shell .nuts-dash-count strong{font-size:26px;letter-spacing:-1px;color:#1c2025}
+#nuts-cms-root .nuts-shell .nuts-dash-count span{font-size:12px;font-weight:600;color:#3a3f46}
+#nuts-cms-root .nuts-shell .nuts-dash-count small{color:#7d838c;font-size:10px}
+#nuts-cms-root .nuts-checklist{list-style:none;margin:10px 0 0;padding:0}
+#nuts-cms-root .nuts-shell .nuts-check{display:flex;align-items:center;gap:12px;width:100%;background:#f7f8fa;border:1px solid #e6e8eb;border-radius:8px;margin:0 0 8px;padding:11px 13px;font-size:13px;text-align:left;cursor:pointer;color:#2b2f36}
+#nuts-cms-root .nuts-check:last-child{border-bottom:0}
+#nuts-cms-root .nuts-shell .nuts-check:hover{border-color:var(--nuts-accent,#096fd2)}
+#nuts-cms-root .nuts-check-icon{flex-shrink:0;width:22px;height:22px;border-radius:50%;border:1.5px solid #c9c9c9;display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:#fff}
+#nuts-cms-root .nuts-check-done .nuts-check-icon{background:var(--nuts-accent,#096fd2);border-color:var(--nuts-accent,#096fd2)}
+#nuts-cms-root .nuts-shell .nuts-check-done span:last-child{color:#8a9099;text-decoration:line-through}
+#nuts-cms-root .nuts-shell .nuts-quick{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:5px;color:#2b2f36}
+#nuts-cms-root .nuts-shell .nuts-quick:hover{border-color:var(--nuts-accent,#096fd2)}
+#nuts-cms-root .nuts-shell .nuts-quick strong{font-size:13px;color:#23272d}
+#nuts-cms-root .nuts-shell .nuts-quick small{color:#7d838c;font-size:11px}
+#nuts-cms-root .nuts-entry-unread{border-left:3px solid #dc3545;padding-left:10px}
+#nuts-cms-root .nuts-media-list{list-style:none;margin:14px 0 0;padding:0}
+#nuts-cms-root .nuts-media-list li{display:flex;align-items:center;gap:14px;border-bottom:1px solid #efefef;padding:10px 0}
+#nuts-cms-root .nuts-media-list img{width:48px;height:48px;object-fit:cover;border-radius:6px;border:1px solid var(--line)}
+#nuts-cms-root .nuts-media-empty{width:48px;height:48px;border-radius:6px;border:1px dashed #bbb;color:var(--muted);font-size:9px;display:inline-flex;align-items:center;justify-content:center}
+#nuts-cms-root .nuts-media-list>div{flex:1;min-width:0}
+#nuts-cms-root .nuts-media-list strong{font-size:13px;display:block}
+#nuts-cms-root .nuts-media-list small{color:var(--muted);font-size:11px}
+#nuts-cms-root .nuts-replace{display:inline-flex;align-items:center;gap:8px;font-size:12px;border:1px solid #cbcbcb;border-radius:6px;padding:7px 12px;cursor:pointer;background:#f5f5f5;white-space:nowrap}
+#nuts-cms-root .nuts-replace:hover{border-color:var(--nuts-accent,#096fd2)}
+#nuts-cms-root .button.button-secondary{background:#ededed;border:1px solid #d3d3d3;color:#333;text-decoration:none;font-size:12px;padding:9px 13px;border-radius:6px;cursor:pointer}
+@media(max-width:700px){#nuts-cms-root .nuts-form-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* 1.5.0: local avatars */
+#nuts-cms-root .nuts-avatar-edit{display:flex;gap:16px;align-items:center;background:#f7f8fa;border:1px solid var(--line);border-radius:12px;padding:14px 18px;min-width:280px}
+#nuts-cms-root .nuts-avatar-img{width:64px;height:64px;border-radius:50%;object-fit:cover;flex-shrink:0;background:#e3e3e3;color:#fff;font-size:26px;display:inline-flex;align-items:center;justify-content:center;font-weight:700}
+#nuts-cms-root .nuts-avatar-edit p{font-size:12px;margin:4px 0 0;max-width:280px}
+#nuts-cms-root .nuts-avatar-edit .nuts-section-actions{margin-top:10px}
+#nuts-cms-root .nuts-avatar-edit .nuts-notice,#nuts-cms-root .nuts-avatar-edit .nuts-error{margin-top:10px;font-size:12px;padding:8px 10px}
+@media(max-width:700px){#nuts-cms-root .nuts-avatar-edit{min-width:0;width:100%}}

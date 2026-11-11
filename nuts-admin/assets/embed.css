@@ -1,0 +1,12 @@
+html.nuts-embedded{padding-top:0!important;background:#f6f6f6}
+.nuts-embedded #wpadminbar,.nuts-embedded #adminmenumain,.nuts-embedded #wpfooter{display:none!important}
+.nuts-embedded #wpcontent,.nuts-embedded #wpfooter{margin-left:0!important}
+.nuts-embedded #wpcontent{padding-left:24px}
+.nuts-embedded body.wp-admin{background:#f6f6f6;color:#222222}
+.nuts-embedded .wrap{margin-top:22px}
+.nuts-embedded .wrap>h1{font-weight:600;letter-spacing:-.6px}
+.nuts-embedded .button-primary{background:#096fd2;border-color:#949494;color:#272727;box-shadow:none;text-shadow:none}
+.nuts-embedded .button-primary:hover,.nuts-embedded .button-primary:focus{background:#a9a9a9;border-color:#727272;color:#1d1d1d}
+.nuts-embedded .widefat,.nuts-embedded .postbox{border-color:#e2e2e2;box-shadow:none}
+.nuts-embedded input:not([type=checkbox]):not([type=radio]):not([type=submit]),.nuts-embedded textarea,.nuts-embedded select{border-color:#cfcfcf;border-radius:5px}
+@media(max-width:600px){.nuts-embedded #wpcontent{padding-left:10px}.nuts-embedded .wrap{margin-right:10px}}

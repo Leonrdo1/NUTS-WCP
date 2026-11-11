@@ -1,0 +1,21 @@
+#nuts-cms-root{--green:var(--nuts-accent,#096fd2)}
+#nuts-cms-root .nuts-shell{background:var(--nuts-background,#f6f6f6);color:var(--nuts-on-background,#222222)}
+#nuts-cms-root .nuts-sidebar{background:var(--nuts-sidebar,#333333);color:var(--nuts-on-sidebar,#ededed)}
+#nuts-cms-root .nuts-sidebar :is(a,summary,.nuts-nav-label,.nuts-sidebar-bottom,.nuts-menu-empty){color:var(--nuts-on-sidebar,#ededed)}
+#nuts-cms-root .nuts-sidebar a:hover{background:color-mix(in srgb,var(--nuts-on-sidebar) 12%,transparent)}
+#nuts-cms-root .nuts-sidebar a.active{background:var(--nuts-accent);color:var(--nuts-on-accent)}
+#nuts-cms-root .nuts-logo span{color:var(--nuts-on-sidebar)}
+#nuts-cms-root .nuts-shell button,#nuts-cms-root .nuts-section-action{background:var(--nuts-accent);color:var(--nuts-on-accent);border-color:color-mix(in srgb,var(--nuts-accent) 70%,#1a1a1a)}
+#nuts-cms-root .nuts-shell :is(.nuts-section-tile,.nuts-card,.nuts-create){color:#222222}
+#nuts-cms-root .nuts-shell :is(header,footer,.nuts-eyebrow,.nuts-heading>div>p,.nuts-frame-loading){color:var(--nuts-on-background)}
+#nuts-cms-root .nuts-shell :is(header,footer,.nuts-workspace-bar)>a{color:inherit}
+#nuts-cms-root .nuts-sidebar .nuts-wp-menu input{background:var(--nuts-sidebar);color:var(--nuts-on-sidebar);border-color:var(--nuts-on-sidebar)!important}
+#nuts-cms-root .nuts-sidebar .nuts-wp-menu input::placeholder{color:var(--nuts-on-sidebar);opacity:.65}
+#nuts-cms-root .nuts-sidebar .nuts-wp-menu small{color:var(--nuts-on-sidebar);opacity:.7}
+#nuts-cms-root .nuts-sidebar .nuts-wp-group a.selected{background:var(--nuts-accent);color:var(--nuts-on-accent)}
+.nuts-embedded body.wp-admin{background:var(--nuts-background);color:var(--nuts-on-background)}
+.nuts-embedded .button-primary{background:var(--nuts-accent);color:var(--nuts-on-accent);border-color:var(--nuts-accent)}
+.nuts-embedded .button-primary:hover,.nuts-embedded .button-primary:focus{background:var(--nuts-accent);color:var(--nuts-on-accent);filter:brightness(.95)}
+.nuts-embedded :is(.postbox,.widefat,.notice){color:#222222}
+.nuts-design-menu{border-top:1px solid #636363;padding-top:14px;margin-top:20px}.nuts-design-menu>summary{cursor:pointer;font-size:12px;font-weight:600;padding:8px 0}.nuts-design-menu>summary .dashicons{font-size:16px;margin-right:5px}.nuts-design-menu nav{margin-top:10px}.nuts-design-menu a{font-size:11px!important;padding:8px 10px!important}.nuts-design-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.nuts-design-tabs a{font-size:12px;padding:8px 12px;border-radius:6px;background:#fff;border:1px solid #dcdcdc;color:#222222!important}.nuts-design-tabs a[aria-current=page]{background:var(--nuts-accent);color:var(--nuts-on-accent)!important;border-color:var(--nuts-accent)}
+.nuts-scheme-options{border:0;padding:0;margin:25px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}.nuts-scheme-options legend,.nuts-custom-colors legend{font-weight:600;margin-bottom:12px}.nuts-scheme-option{border:1px solid #d8d8d8;border-radius:8px;padding:12px;display:flex;gap:10px;align-items:center;font-size:12px;cursor:pointer}.nuts-scheme-option:has(input:checked){outline:2px solid #222222;outline-offset:2px}.nuts-scheme-swatch{width:34px;height:34px;border:2px solid;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}.nuts-scheme-swatch i{width:15px;height:15px;border-radius:3px}.nuts-custom-colors{border:0;padding:0;margin:25px 0;display:flex;flex-wrap:wrap;gap:20px}.nuts-custom-colors label{display:flex;flex-direction:column;gap:8px;font-size:12px}.nuts-custom-colors input[type=color]{height:40px;width:90px;padding:3px}.nuts-custom-colors code{background:none;padding:0;font-size:11px}.nuts-element-samples label{display:block;font-size:12px;margin:15px 0 5px}.nuts-element-samples input{display:block;max-width:100%;width:350px}.nuts-shell .nuts-element-samples button{cursor:default}@media(max-width:700px){.nuts-design-menu nav{max-height:35vh;overflow:auto}.nuts-scheme-options{grid-template-columns:1fr}.nuts-design-tabs{gap:6px}.nuts-design-tabs a{font-size:11px}}

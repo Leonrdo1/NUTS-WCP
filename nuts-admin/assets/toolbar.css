@@ -1,0 +1,62 @@
+html:has(body.nuts-toolbar):not(.nuts-embedded){margin-top:0!important;padding-top:54px!important}
+body.nuts-toolbar #wpadminbar{box-sizing:border-box;height:54px;background:linear-gradient(110deg,#41454b 0%,#555a62 48%,#44484f 100%);box-shadow:0 5px 18px #171b2430,0 1px 3px #171b2433;border-bottom:1px solid #ffffff15}
+body.nuts-toolbar #wpadminbar *{box-sizing:border-box}
+body.nuts-toolbar #wpadminbar .ab-top-menu{display:flex;align-items:center;height:54px;gap:2px;padding:0 8px}
+body.nuts-toolbar #wpadminbar .ab-top-menu>li{height:54px;margin:0;float:none}
+body.nuts-toolbar #wpadminbar .ab-top-menu>li>.ab-item{display:flex!important;align-items:center;justify-content:center;gap:9px;height:38px!important;min-width:38px;line-height:20px!important;padding:0 12px!important;margin:8px 0;border-radius:6px;color:#f5f6f8!important;font-size:12px;font-weight:500;white-space:nowrap;transition:background .15s}
+body.nuts-toolbar #wpadminbar .ab-top-menu>li:is(:hover,.hover)>.ab-item,body.nuts-toolbar #wpadminbar .ab-top-menu>li>.ab-item:focus-visible{background:#ffffff18!important;color:white!important}
+body.nuts-toolbar #wpadminbar .ab-top-menu>li>.ab-item:focus-visible{outline:2px solid #e0e6ee;outline-offset:1px}
+body.nuts-toolbar #wpadminbar .ab-top-menu>li>.ab-item .ab-label{height:auto;line-height:20px;float:none;margin:0;padding:0}
+body.nuts-toolbar #wpadminbar .ab-top-menu>li:is(#wp-admin-bar-wp-logo,#wp-admin-bar-menu-toggle,#wp-admin-bar-command-palette,#wp-admin-bar-search,#wp-admin-bar-comments,#wp-admin-bar-new-content,#wp-admin-bar-updates)>.ab-item .ab-icon{height:20px!important;width:20px!important;min-width:20px;margin:0!important;padding:0!important;float:none;position:static;display:block;background:currentColor;mask:var(--nuts-toolbar-icon) center/contain no-repeat;-webkit-mask:var(--nuts-toolbar-icon) center/contain no-repeat}
+body.nuts-toolbar #wpadminbar .ab-top-menu>li:is(#wp-admin-bar-wp-logo,#wp-admin-bar-menu-toggle,#wp-admin-bar-command-palette,#wp-admin-bar-search,#wp-admin-bar-comments,#wp-admin-bar-new-content,#wp-admin-bar-updates)>.ab-item .ab-icon:before{content:none!important}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-wp-logo{--nuts-toolbar-icon:url('icons/nuts.svg')}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-menu-toggle{--nuts-toolbar-icon:url('icons/menu.svg')}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-command-palette,body.nuts-toolbar #wpadminbar #wp-admin-bar-search{--nuts-toolbar-icon:url('icons/search.svg')}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-comments{--nuts-toolbar-icon:url('icons/comments.svg')}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-new-content{--nuts-toolbar-icon:url('icons/plus.svg')}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-updates{--nuts-toolbar-icon:url('icons/updates.svg')}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-site-name>.ab-item:before{content:''!important;position:static;display:block;float:none;height:20px;width:20px;margin:0;background:currentColor;mask:url('icons/home.svg') center/contain no-repeat;-webkit-mask:url('icons/home.svg') center/contain no-repeat}
+body.nuts-toolbar #wpadminbar .nuts-toolbar-user-icon{display:block;width:20px;height:20px;background:currentColor;mask:url('icons/user.svg') center/contain no-repeat;-webkit-mask:url('icons/user.svg') center/contain no-repeat}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-my-account>.ab-item:before{display:none!important}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-my-account .display-name{line-height:20px;font-size:12px;margin:0}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-command-palette kbd{font-family:inherit;font-size:11px;line-height:18px;background:#ffffff12;border:1px solid #ffffff20;border-radius:4px;padding:0 5px}
+body.nuts-toolbar #wpadminbar .ab-sub-wrapper{top:54px;background:#3d424a;border:1px solid #ffffff12;border-radius:0 0 8px 8px;box-shadow:0 8px 18px #10141a30}
+body.nuts-toolbar #wpadminbar .ab-sub-wrapper .ab-item{color:#eef1f5}
+body.nuts-toolbar #wpadminbar .ab-sub-wrapper .ab-item:hover{color:white;background:#ffffff12}
+body.nuts-toolbar #adminmenuwrap,body.nuts-toolbar #adminmenuback{top:54px}
+body.toplevel_page_nuts-cms .nuts-shell{min-height:calc(100vh - 54px)}
+@media(max-width:782px){body.nuts-toolbar #wpadminbar{position:fixed}body.nuts-toolbar #wpadminbar .ab-top-menu{gap:0;padding:0 4px}body.nuts-toolbar #wpadminbar .ab-top-menu>li>.ab-item{padding:0 9px!important;min-width:38px}body.nuts-toolbar #wpadminbar #wp-admin-bar-site-name>.ab-item{font-size:0;gap:0}body.nuts-toolbar #wpadminbar #wp-admin-bar-my-account .display-name{display:none}body.nuts-toolbar #wpadminbar #wp-admin-bar-menu-toggle>.ab-item .ab-icon{margin:0!important}}
+
+body.nuts-toolbar #wpadminbar #wp-toolbar{display:flex;justify-content:space-between;align-items:center;height:54px}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-root-default{min-width:0}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-top-secondary{flex-shrink:0;float:none}
+body.nuts-toolbar #wpadminbar .nuts-bell{display:block;width:20px;height:20px;background:currentColor;mask:url('icons/bell.svg') center/contain no-repeat;-webkit-mask:url('icons/bell.svg') center/contain no-repeat}
+body.nuts-toolbar #wpadminbar .nuts-notification-count{background:#dc3545;color:#fff;border-radius:10px;font-size:10px;line-height:17px;min-width:17px;text-align:center;padding:0 4px}
+body.nuts-toolbar #wpadminbar .nuts-notification-count[hidden]{display:none}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-nuts-notification-preview{width:320px;max-width:90vw}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-nuts-notification-preview>.ab-item{height:auto;white-space:normal;line-height:1.6;padding:12px 15px}
+.nuts-event-list{list-style:none;padding:0}.nuts-event-list li{padding:16px 0;border-bottom:1px solid #e2e2e2}.nuts-event-list small{display:block;color:#737373;margin-top:6px}.nuts-event-list .critical{border-left:3px solid #096fd2;padding-left:12px}
+@media(max-width:782px){body.nuts-toolbar #wpadminbar #wp-admin-bar-nuts-notifications{display:block}}
+/* Figma 3127:1526 / 3127:1605: view links, 38px height, 6px radius, 6px gap. */
+body.nuts-toolbar #wpadminbar #wp-admin-bar-wp-logo,body.nuts-toolbar #wpadminbar #wp-admin-bar-site-name{flex-shrink:0}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-wp-logo{margin-right:4px}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-site-name{position:relative;margin-right:46px}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-site-name:after{content:'';position:absolute;right:-24px;top:14.5px;width:1px;height:25px;background:#ffffff30}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-wp-logo>.ab-item,body.nuts-toolbar #wpadminbar #wp-admin-bar-site-name>.ab-item{gap:4px!important;padding:0 16px!important;font-size:12px!important;min-width:0;font-family:Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-weight:500}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-wp-logo>.ab-item{width:98px}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-site-name>.ab-item{width:84px}
+body.nuts-toolbar #wpadminbar .nuts-view-active>.ab-item{background:#ffffff12}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-site-name>.ab-item:before{display:none!important}
+body.nuts-toolbar #wpadminbar .nuts-view-icon{width:20px;height:20px;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}
+body.nuts-toolbar #wpadminbar .nuts-view-icon img{display:block;margin:0;max-width:none}
+body.nuts-toolbar #wpadminbar .nuts-view-favicon img{width:20px;height:20px;object-fit:contain;border-radius:3px}
+body.nuts-toolbar #wpadminbar .nuts-view-label{line-height:20px;color:#f5f6f8;font-size:12px}
+@media(max-width:782px){body.nuts-toolbar #wpadminbar #wp-admin-bar-wp-logo,body.nuts-toolbar #wpadminbar #wp-admin-bar-site-name{display:block!important}body.nuts-toolbar #wpadminbar #wp-admin-bar-menu-toggle{display:none!important}body.nuts-toolbar #wpadminbar #wp-admin-bar-site-name{margin-right:12px}body.nuts-toolbar #wpadminbar #wp-admin-bar-site-name:after{right:-7px}body.nuts-toolbar #wpadminbar #wp-admin-bar-wp-logo>.ab-item,body.nuts-toolbar #wpadminbar #wp-admin-bar-site-name>.ab-item{padding:0 10px!important;width:auto;gap:4px}body.nuts-toolbar #wpadminbar #wp-admin-bar-comments,body.nuts-toolbar #wpadminbar #wp-admin-bar-updates{display:none}body.nuts-toolbar #wpadminbar #wp-admin-bar-new-content>.ab-item .ab-label{display:none}}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-root-default{padding-left:18px}
+@media(max-width:782px){body.nuts-toolbar #wpadminbar #wp-admin-bar-root-default{padding-left:6px}}
+body.nuts-toolbar #wpadminbar .nuts-view-fallback{background:#f3f1f1;mask:url('figma/site-fallback.svg') center/20px 28px no-repeat;-webkit-mask:url('figma/site-fallback.svg') center/20px 28px no-repeat}
+body.nuts-toolbar #wpadminbar .nuts-view-fallback img{opacity:0}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-nuts-notifications{margin-left:12px}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-nuts-notifications>.ab-item{background:#ffffff12;border:1px solid #ffffff05;border-radius:8px;padding-left:12px!important;padding-right:12px!important}
+body.nuts-toolbar #wpadminbar #wp-admin-bar-nuts-notifications:is(:hover,.hover)>.ab-item{background:#ffffff20!important}
+@media(max-width:782px){body.nuts-toolbar #wpadminbar #wp-admin-bar-nuts-notifications{margin-left:5px}}
