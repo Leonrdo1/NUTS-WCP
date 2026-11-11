@@ -106,3 +106,15 @@ body.toplevel_page_nuts-cms #wpbody-content{float:none}
 #nuts-cms-root .nuts-avatar-edit .nuts-section-actions{margin-top:10px}
 #nuts-cms-root .nuts-avatar-edit .nuts-notice,#nuts-cms-root .nuts-avatar-edit .nuts-error{margin-top:10px;font-size:12px;padding:8px 10px}
 @media(max-width:700px){#nuts-cms-root .nuts-avatar-edit{min-width:0;width:100%}}
+
+/* 1.8.0: catalog — services, offers, custom types */
+#nuts-cms-root .nuts-offer-card{border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px;background:#fbfbfc}
+#nuts-cms-root .nuts-offer-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+#nuts-cms-root .nuts-offer-head strong{font-size:13px}
+#nuts-cms-root .nuts-offer-head small{color:var(--muted);font-size:11px;flex:1}
+#nuts-cms-root .nuts-offer-head .nuts-section-actions{margin:0}
+#nuts-cms-root .nuts-offer-body{margin-top:12px;border-top:1px solid #ececec;padding-top:10px}
+#nuts-cms-root .nuts-offer-group{margin-bottom:12px}
+#nuts-cms-root .nuts-offer-group h3{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin:0 0 8px}
+#nuts-cms-root .nuts-offer-item{border:0;background:#fff;border:1px solid #e6e8eb;border-radius:8px;margin:0 0 6px;padding:9px 12px}
+#nuts-cms-root .nuts-offer-item input:checked~span{color:#202020}

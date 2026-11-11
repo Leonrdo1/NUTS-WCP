@@ -2,14 +2,14 @@
 /**
  * Plugin Name: NUTS WCP
  * Description: NUTS WCP — панель управления сайтом на штатном ядре.
- * Version: 1.7.1
+ * Version: 1.8.0
  * Requires at least: 6.6
  * Requires PHP: 8.0
  * License: GPL-2.0-or-later
  */
 namespace NutsCMS;
 defined('ABSPATH') || exit;
-const VERSION = '1.7.1';
+const VERSION = '1.8.0';
 require_once __DIR__.'/includes/appearance.php';
 require_once __DIR__.'/includes/status.php';
 require_once __DIR__.'/includes/community.php';
@@ -26,6 +26,7 @@ require_once __DIR__.'/includes/login.php';
 require_once __DIR__.'/includes/avatars.php';
 require_once __DIR__.'/includes/installer.php';
 require_once __DIR__.'/includes/updater.php';
+require_once __DIR__.'/includes/catalog.php';
 
 add_action('admin_menu', function () {
     add_menu_page('NUTS ПУС', 'NUTS ПУС', 'edit_pages', 'nuts-cms', function () {
@@ -50,6 +51,7 @@ add_action('admin_enqueue_scripts', function ($hook) {
     wp_enqueue_script('nuts-sections', plugins_url('assets/sections.js', __FILE__), ['wp-element', 'nuts-workspace', 'nuts-design', 'nuts-status', 'nuts-community'], filemtime(__DIR__.'/assets/sections.js'), true);
     wp_enqueue_script('nuts-site-settings', plugins_url('assets/site-settings.js', __FILE__), ['wp-element', 'wp-api-fetch', 'nuts-workspace'], filemtime(__DIR__.'/assets/site-settings.js'), true);
     wp_enqueue_script('nuts-tools', plugins_url('assets/tools.js', __FILE__), ['wp-element', 'wp-api-fetch', 'nuts-workspace'], filemtime(__DIR__.'/assets/tools.js'), true);
+    wp_enqueue_script('nuts-catalog', plugins_url('assets/catalog.js', __FILE__), ['wp-element', 'wp-api-fetch', 'nuts-workspace'], filemtime(__DIR__.'/assets/catalog.js'), true);
     wp_enqueue_script('nuts-dashboard', plugins_url('assets/dashboard.js', __FILE__), ['wp-element', 'wp-api-fetch', 'nuts-workspace', 'nuts-community', 'nuts-identity'], filemtime(__DIR__.'/assets/dashboard.js'), true);
     wp_enqueue_script('nuts-admin', plugins_url('assets/admin.js', __FILE__), ['wp-element', 'wp-api-fetch', 'nuts-workspace', 'nuts-sections'], filemtime(__DIR__.'/assets/admin.js'), true);
     wp_localize_script('nuts-workspace', 'nutsConfig', [
@@ -74,6 +76,8 @@ add_action('admin_enqueue_scripts', function ($hook) {
             'settings' => current_user_can('manage_options'),
         ],
         'catalogType' => post_type_exists('product') ? 'product' : 'nuts_product',
+        'customTypes' => catalog_custom_types(),
+        'offerItemsType' => 'nuts_offer',
         'blockTheme' => wp_is_block_theme(),
         'designSettings' => current_user_can('edit_theme_options') ? wp_get_global_settings() : [],
         'canManage' => current_user_can('manage_options'),

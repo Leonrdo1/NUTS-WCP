@@ -6,7 +6,11 @@
     const sections = [
         { id: 'dashboard', label: 'Сегодня', group: 'Контент', icon: 'chart-pie', allowed: true },
         ...[['news','Новости панели','megaphone'],['notifications','Уведомления','bell'],['developer','Страница разработчика','admin-home'],['help','Справка','editor-help']].map(([id,label,icon])=>({id,label,icon,group:id==='news'?'Контент':'Управление',allowed:true})),
-        { id: 'catalog', label: 'Каталог товаров', group: 'Контент', icon: 'products', url: a + 'edit.php?post_type=' + nutsConfig.catalogType, allowed: caps.content },
+        { id: 'catalog', label: 'Товары', group: 'Каталог', icon: 'products', url: a + 'edit.php?post_type=' + nutsConfig.catalogType, allowed: caps.content },
+        { id: 'services', label: 'Услуги', group: 'Каталог', icon: 'admin-tools', url: a + 'edit.php?post_type=nuts_service', allowed: caps.content },
+        { id: 'offers', label: 'Предложения', group: 'Каталог', icon: 'money-alt', allowed: caps.content },
+        { id: 'catalog-types', label: 'Конструктор разделов', group: 'Каталог', icon: 'block-default', allowed: caps.settings },
+        ...(nutsConfig.customTypes || []).map(t => ({ id: 'ct-' + t.slug, label: t.name, group: 'Каталог', icon: 'category', url: a + 'edit.php?post_type=' + t.slug, allowed: caps.content })),
         { id: 'blog', label: 'Блог', group: 'Контент', icon: 'edit', url: a + 'edit.php', allowed: caps.content },
         { id: 'pages', label: 'Страницы', group: 'Контент', icon: 'admin-page', allowed: true },
         { id: 'media', label: 'Медиатека', group: 'Контент', icon: 'format-image', url: a + 'upload.php', allowed: caps.content },
@@ -52,6 +56,8 @@
             id === 'dashboard' ? h(window.nutsDashboard.Dashboard, { onOpen, onSection }) :
             id === 'site' ? h(window.nutsSiteSettings.SiteHub) :
             id === 'contacts' ? h(window.nutsSiteSettings.Contacts) :
+            id === 'offers' ? h(window.nutsCatalog.Offers) :
+            id === 'catalog-types' ? h(window.nutsCatalog.Types) :
             ['redirects', 'seo', 'feedback', 'media-tools', 'export'].includes(id) ? h(window.nutsTools.ToolsHub, { id }) :
             ['news','notifications','developer','help'].includes(id) ? h(window.nutsCommunity.Hub,{id}) :
             id === 'status' ? h(window.nutsStatus.Status,{onOpen}) :

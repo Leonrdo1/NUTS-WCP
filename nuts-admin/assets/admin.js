@@ -86,7 +86,7 @@
             h('aside', { className: 'nuts-sidebar' },
                 h('div', { className: 'nuts-logo' }, 'NUTS ПУС', h('span', null, 'Панель управления сайтом')),
                 h('div', {className:'nuts-site-card','aria-label':'Текущий сайт'},h('strong',{title:nutsConfig.siteTitle},nutsConfig.siteTitle),nutsConfig.siteDescription&&h('span',null,nutsConfig.siteDescription)),
-                h('nav', { className: 'nuts-primary-nav', 'aria-label': 'Основные разделы NUTS' }, ['Контент', 'Дизайн', 'Управление'].map(group =>
+                h('nav', { className: 'nuts-primary-nav', 'aria-label': 'Основные разделы NUTS' }, ['Контент', 'Каталог', 'Дизайн', 'Управление'].map(group =>
                     h(Collapsible, { key:group, storageKey:'primary:'+group, defaultOpen:true, className:'nuts-primary-group', summaryClass:'nuts-nav-label nuts-group-heading',title:group.toUpperCase() }, sections.filter(s => s.group === group).map(item => {
                         const active = item.url ? workspace?.url === item.url : !workspace && sectionId === item.id;
                         return h('a', { key: item.id, 'data-section': item.id, className: active ? 'active' : '', 'aria-current': active ? 'page' : undefined, href: item.url ? '#wp=' + encodeURIComponent(item.url) : item.id === 'pages' ? '#nuts-pages' : '#nuts=' + item.id,
